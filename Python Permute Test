@@ -1,0 +1,23 @@
+a = [int(x) for x in input().split()] //To get input array from the user
+
+def fact(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fact(n-1)
+
+test=int(input())
+even = 0
+odd = 0
+for i in range(0,test):
+    num = int(input())
+    for j in range(0,num+1):
+        sub = num - j
+        ways = int(fact(num) / (fact(sub) * fact(j)))
+        if ways%2 == 0:
+            even += 1
+        else:
+            odd += 1
+    print("%d %d"%(even,odd))
+    even = 0
+    odd = 0
