@@ -1,5 +1,6 @@
 a = [int(x) for x in input().split()] //To get input array from the user
 
+//PYTHON PERMUTE
 def fact(n):
     if n == 0 or n == 1:
         return 1
@@ -21,3 +22,9 @@ for i in range(0,test):
     print("%d %d"%(even,odd))
     even = 0
     odd = 0
+    
+    
+    //GETTING INPUT FROM USER AND STORING SQUARE OF THOSE NUMBERS
+numbers = [int(x) for x in input().split()]
+arr = [x**2 for x in numbers]
+print(arr)
