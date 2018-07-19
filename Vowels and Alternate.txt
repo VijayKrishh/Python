@@ -1,0 +1,20 @@
+####Program for finding longest substring with vowels####
+
+import re
+a=input()
+b=re.findall(r'[aeiou]+',a)
+z=[]
+for i in b:
+    c=len(i)
+    z.append(c)
+print(max(z)) if len(z)>0 else print("0")
+
+
+####Alternating Characters####
+
+def alt(s, t):
+    if not (s and t):
+        return s + t
+    return s[0] + t[0] + alt(s[1:], t[1:])
+x = alt('str', 'ing')
+print(x)
