@@ -14,3 +14,29 @@ new_list.sort()
 result = new_list[1][1]
 result.sort()
 print (*result, sep = "\n")
+
+
+
+
+//Program for Japan Company : Question 1
+
+numArr = [x for x in input().split()]
+for num in numArr:
+  if num == '+' or num >= 'a' and num <= 'z':
+      print("invalid")
+  elif int(num) >= 0 and int(num) <= 1000:     
+      num_1 = str(num)
+      count = 0
+      for i in num_1:
+          if i == '3':
+            count += 1
+      if int(num) % 3 == 0 and count > 0:
+          print("dumb")
+      elif count > 0:
+          print("stupid")
+      elif int(num) % 3 == 0:
+          print("idiot")
+      elif int(num) % 3 != 0 and count == 0:
+          print("smart")
+  else:
+      print("invalid")
