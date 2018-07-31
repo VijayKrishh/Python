@@ -1,0 +1,22 @@
+def palindrome(s):
+    n = len(s)
+    for i in range(n//2+1):
+        if s[i] != s[n-1-i]:
+            return False
+    return True
+s = input()
+n = len(s)
+for i in range(n//2):
+    s1 = s[i:n-i]
+    a = set(s1)
+    if len(a) == 1:
+        print(0)
+        break
+    if palindrome(s1):
+        print(len(s1)-1)
+        break
+    else:
+        print(len(s1))
+        break
+if n == 1:
+    print(0)
