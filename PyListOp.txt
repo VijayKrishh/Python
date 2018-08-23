@@ -1,0 +1,7 @@
+# Printing list elements without spaces between commas
+
+print("[{}]".format(",".join(map(repr, list))))
+
+#Printing list elements with double quotes
+
+print(json.dumps(list))
