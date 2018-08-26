@@ -40,3 +40,8 @@ for num in numArr:
           print("smart")
   else:
       print("invalid")
+      
+      
+      
+ //USER DEFINED VALUES FOR NxN MATRIX
+ matrix.append(list(map(int, input().rstrip().split())))
